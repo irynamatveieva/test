@@ -1,0 +1,30 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : "Send notification to tenant admins when the connection status between TB and Edge changes"
+    },
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "586b3190-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "name" : "Edge connection status change",
+    "recipientsConfig" : {
+      "targets" : [ "5852a080-8c7f-11ef-ae92-ed5a145c8601" ],
+      "triggerType" : "EDGE_CONNECTION"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "586a2020-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "triggerConfig" : {
+      "triggerType" : "EDGE_CONNECTION",
+      "edges" : null,
+      "notifyOn" : [ "DISCONNECTED", "CONNECTED" ],
+      "triggerType" : "EDGE_CONNECTION"
+    },
+    "triggerType" : "EDGE_CONNECTION"
+  }
+}

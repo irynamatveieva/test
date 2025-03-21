@@ -1,0 +1,102 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "58341c00-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e24dc700-02f0-11f0-a984-1df721702d15"
+    },
+    "label" : "",
+    "name" : "Device",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "jzNtRl6Uy7gqcGrH0OaT",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742293346486,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742293346485,
+      "longValue" : 1742293346485,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1742292728008,
+      "longValue" : 1742292726329,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "t" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "t + 10",
+      "output" : {
+        "name" : "t10",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742294487094,
+      "failuresEnabled" : true
+    },
+    "name" : "Test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SIMPLE"
+  } ]
+}

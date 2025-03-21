@@ -1,0 +1,296 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "test",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "ca55f1e5-27b4-08c8-49a6-8a6065a9ab7c" : {
+          "typeFullFqn" : "system.maps_v2.openstreetmap",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "9c1561b0-0568-11f0-965f-bdf8d70d4e1d",
+              "entityAliasId" : null,
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "latitude",
+                "type" : "attribute",
+                "label" : "latitude",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.0759185621663876
+              }, {
+                "name" : "longitude",
+                "type" : "attribute",
+                "label" : "longitude",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.756442368317394
+              }, {
+                "name" : "perimeter",
+                "type" : "attribute",
+                "label" : "perimeter",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.010524949254256066
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1742374665033,
+                  "endTimeMs" : 1742461065033
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "provider" : "openstreet-map",
+              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+              "gmDefaultMapType" : "roadmap",
+              "mapProvider" : "OpenStreetMap.Mapnik",
+              "useCustomProvider" : false,
+              "customProviderTileUrl" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "mapProviderHere" : "HERE.normalDay",
+              "credentials" : {
+                "useV3" : true,
+                "app_id" : "AhM6TzD9ThyK78CT3ptx",
+                "app_code" : "p6NPiITB3Vv0GMUFnkLOOg",
+                "apiKey" : "kVXykxAfZ6LS4EbCTO02soFVfjA7HoBzNVVH9u7nzoE"
+              },
+              "mapImageUrl" : "tb-image;/api/images/system/air_quality_monitoring_dashboard_widget_new_openstreetmap_map_image.svg",
+              "imageEntityAlias" : "",
+              "imageUrlAttribute" : "",
+              "tmApiKey" : "84d6d83e0e51e481e50454ccbe8986b",
+              "tmDefaultMapType" : "roadmap",
+              "latKeyName" : "latitude",
+              "lngKeyName" : "longitude",
+              "xPosKeyName" : "xPos",
+              "yPosKeyName" : "yPos",
+              "defaultZoomLevel" : null,
+              "defaultCenterPosition" : "0,0",
+              "disableScrollZooming" : false,
+              "disableDoubleClickZooming" : false,
+              "disableZoomControl" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "mapPageSize" : 16384,
+              "markerOffsetX" : 0.5,
+              "markerOffsetY" : 1,
+              "posFunction" : "return {x: origXPos, y: origYPos};",
+              "draggableMarker" : true,
+              "showLabel" : true,
+              "useLabelFunction" : false,
+              "label" : "${entityName}",
+              "labelFunction" : null,
+              "showTooltip" : true,
+              "showTooltipAction" : "click",
+              "autocloseTooltip" : true,
+              "useTooltipFunction" : false,
+              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See advanced settings for details</small>",
+              "tooltipFunction" : null,
+              "tooltipOffsetX" : 0,
+              "tooltipOffsetY" : -1,
+              "color" : "#fe7569",
+              "useColorFunction" : true,
+              "colorFunction" : "var type = dsData[dsIndex]['Type'];\nif (type == 'colorpin') {\n\tvar temperature = dsData[dsIndex]['temperature'];\n\tif (typeof temperature !== undefined) {\n\t    var percent = (temperature + 60)/120 * 100;\n\t    return tinycolor.mix('blue', 'red', percent).toHexString();\n\t}\n\treturn 'blue';\n}\n",
+              "useMarkerImageFunction" : true,
+              "markerImage" : null,
+              "markerImageSize" : 34,
+              "markerImageFunction" : "var type = dsData[dsIndex]['Type'];\nif (type == 'thermometer') {\n\tvar res = {\n\t    url: images[0],\n\t    size: 40\n\t}\n\tvar temperature = dsData[dsIndex]['temperature'];\n\tif (typeof temperature !== undefined) {\n\t    var percent = (temperature + 60)/120;\n\t    var index = Math.min(3, Math.floor(4 * percent));\n\t    res.url = images[index];\n\t}\n\treturn res;\n}",
+              "markerImages" : [ "tb-image;/api/images/system/map_marker_image_0.png", "tb-image;/api/images/system/map_marker_image_1.png", "tb-image;/api/images/system/map_marker_image_2.png", "tb-image;/api/images/system/map_marker_image_3.png" ],
+              "showPolygon" : true,
+              "polygonKeyName" : "perimeter",
+              "editablePolygon" : true,
+              "showPolygonLabel" : false,
+              "usePolygonLabelFunction" : false,
+              "polygonLabel" : "${entityName}",
+              "polygonLabelFunction" : null,
+              "showPolygonTooltip" : false,
+              "showPolygonTooltipAction" : "click",
+              "autoClosePolygonTooltip" : true,
+              "usePolygonTooltipFunction" : false,
+              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "polygonTooltipFunction" : null,
+              "polygonColor" : "#3388ff",
+              "polygonOpacity" : 0.2,
+              "usePolygonColorFunction" : false,
+              "polygonColorFunction" : null,
+              "polygonStrokeColor" : "#3388ff",
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 3,
+              "usePolygonStrokeColorFunction" : false,
+              "polygonStrokeColorFunction" : null,
+              "showCircle" : true,
+              "circleKeyName" : "perimeter",
+              "editableCircle" : true,
+              "showCircleLabel" : false,
+              "showCircleTooltip" : false,
+              "circleFillColor" : "#3388ff",
+              "circleFillColorOpacity" : 0.2,
+              "useCircleFillColorFunction" : false,
+              "circleStrokeColor" : "#3388ff",
+              "circleStrokeOpacity" : 1,
+              "circleStrokeWeight" : 3,
+              "useCircleStrokeColorFunction" : false,
+              "snappable" : false,
+              "initDragMode" : false,
+              "hideAllControlButton" : false,
+              "hideDrawControlButton" : false,
+              "hideEditControlButton" : false,
+              "hideRemoveControlButton" : false,
+              "useClusterMarkers" : false,
+              "zoomOnClick" : true,
+              "maxZoom" : null,
+              "maxClusterRadius" : 80,
+              "animate" : true,
+              "spiderfyOnMaxZoom" : false,
+              "showCoverageOnHover" : true,
+              "chunkedLoading" : false,
+              "removeOutsideVisibleBounds" : true,
+              "useIconCreateFunction" : false,
+              "clusterMarkerFunction" : null
+            },
+            "title" : "OpenStreet Map",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ca55f1e5-27b4-08c8-49a6-8a6065a9ab7c"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "test",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "ca55f1e5-27b4-08c8-49a6-8a6065a9ab7c" : {
+                  "sizeX" : 15,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : { },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1742374660743,
+            "endTimeMs" : 1742461060743
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "test",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "13430cd0-0571-11f0-b337-c97ab0900455"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

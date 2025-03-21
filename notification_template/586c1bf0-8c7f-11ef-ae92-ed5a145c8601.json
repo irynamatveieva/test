@@ -1,0 +1,35 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "error",
+              "color" : "#e91a1a"
+            },
+            "actionButtonConfig" : {
+              "enabled" : true,
+              "text" : "Go to Edge",
+              "linkType" : "LINK",
+              "link" : "/edgeManagement/instances/all/${edgeId}"
+            }
+          },
+          "body" : "Failure message: '${failureMsg}'",
+          "enabled" : true,
+          "subject" : "Edge '${edgeName}' communication failure occurred"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "586c1bf0-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "name" : "Edge communication failure notification",
+    "notificationType" : "EDGE_COMMUNICATION_FAILURE"
+  }
+}
