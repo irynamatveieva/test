@@ -5,7 +5,10 @@
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ROLE",
+      "id" : "95cfe620-8c7f-11ef-b27c-df1284179555"
+    },
     "name" : "Customer User",
     "permissions" : {
       "ALL" : [ "READ", "RPC_CALL", "READ_CREDENTIALS", "READ_ATTRIBUTES", "READ_TELEMETRY" ],

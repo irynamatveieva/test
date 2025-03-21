@@ -5,7 +5,10 @@
       "entityType" : "CUSTOMER",
       "id" : "f0b53960-94fd-11ef-bd40-1dc161e9e5ba"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ROLE",
+      "id" : "f0c36a30-94fd-11ef-bd40-1dc161e9e5ba"
+    },
     "name" : "Public User",
     "permissions" : {
       "ALARM" : [ "READ" ],

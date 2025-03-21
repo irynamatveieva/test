@@ -282,7 +282,10 @@
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "13430cd0-0571-11f0-b337-c97ab0900455"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "13430cd0-0571-11f0-b337-c97ab0900455"

@@ -6,7 +6,10 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "877900f0-0567-11f0-965f-bdf8d70d4e1d"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
       "id" : "8a652460-0567-11f0-965f-bdf8d70d4e1d"
@@ -804,7 +807,7 @@
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = {waterConsumption: 60};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var msg = {waterConsumption: 60};\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "88f76390-0567-11f0-965f-bdf8d70d4e1d",
+        "originatorId" : "57baa640-8c7f-11ef-ae92-ed5a145c8601",
         "originatorType" : "ASSET"
       },
       "configurationVersion" : 2,
@@ -832,7 +835,7 @@
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { waterConsumption: 60 };\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var msg = { waterConsumption: 60 };\nvar metadata = {};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "originatorId" : "890c2410-0567-11f0-965f-bdf8d70d4e1d",
+        "originatorId" : "57baa640-8c7f-11ef-ae92-ed5a145c8601",
         "originatorType" : "ASSET"
       },
       "configurationVersion" : 2,

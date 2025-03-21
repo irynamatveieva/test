@@ -22,7 +22,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "58341c00-8c7f-11ef-ae92-ed5a145c8601"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "e24dc700-02f0-11f0-a984-1df721702d15"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -35,7 +38,7 @@
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "jzNtRl6Uy7gqcGrH0OaT",
+    "credentialsId" : "gHAjetPgRrHAwYMTtlMf",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -46,7 +49,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1742293346486,
+      "lastUpdateTs" : 1742542037545,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -89,10 +92,44 @@
     "configurationVersion" : 0,
     "debugSettings" : {
       "allEnabled" : false,
-      "allEnabledUntil" : 1742294487094,
+      "allEnabledUntil" : 1742546103750,
       "failuresEnabled" : true
     },
     "name" : "Test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "t" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "0f809210-062b-11f0-a3b6-2d87f3c32b94"
+          },
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "t + 200",
+      "output" : {
+        "name" : "t200",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742546100767,
+      "failuresEnabled" : true
+    },
+    "name" : "Test 2",
     "tenantId" : {
       "entityType" : "TENANT",
       "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"

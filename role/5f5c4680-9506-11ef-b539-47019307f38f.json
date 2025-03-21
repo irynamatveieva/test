@@ -5,7 +5,10 @@
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ROLE",
+      "id" : "5f5c4680-9506-11ef-b539-47019307f38f"
+    },
     "name" : "Scheduler event reader",
     "permissions" : {
       "SCHEDULER_EVENT" : [ "READ", "READ_ATTRIBUTES", "READ_TELEMETRY" ]

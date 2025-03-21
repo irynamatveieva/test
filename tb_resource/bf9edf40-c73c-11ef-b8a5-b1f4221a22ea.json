@@ -21,7 +21,10 @@
       }
     },
     "etag" : "5c6325259bc62d5fc63382f2e5cba3ce209c55a37d1a746aaa7e740be0dbaf38",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "bf9edf40-c73c-11ef-b8a5-b1f4221a22ea"
+    },
     "fileName" : "simple-horizontal-scale-hp.svg",
     "id" : {
       "entityType" : "TB_RESOURCE",

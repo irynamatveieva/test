@@ -20,7 +20,10 @@
       "actions" : { }
     },
     "edgeGroupAll" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "580a9b00-8c7f-11ef-ae92-ed5a145c8601"
+    },
     "groupAll" : true,
     "id" : {
       "entityType" : "ENTITY_GROUP",
