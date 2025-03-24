@@ -1,0 +1,96 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "58341c00-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "8b43fb80-063f-11f0-935e-abb9314f9acd"
+    },
+    "label" : "",
+    "name" : "Polygon Test",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "X7n10n3hAy5q9m0UbM3E",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742553644067,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742553644067,
+      "longValue" : 1742553644061,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 50.57495727486338,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1742555793367,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 30.119902626299737,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1742555793367,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"latitude\":50.32254778825905,\"longitude\":28.207787701215757,\"radius\":47477.33130420423}",
+      "key" : "perimeterCircle",
+      "lastUpdateTs" : 1742554178555,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[[50.75581142688204,29.097910166341073],[50.16785158177623,29.35066098977171],[50.164329922384674,29.773743889862114],[50.16785158177623,30.801230932938843],[50.459245308833495,30.92760634465418],[50.486522489629564,30.68548421850448],[50.703612031034005,30.872660513473573]],[[50.606017492632766,29.36165015600782],[50.54317104075835,29.762754723626013],[50.41021974600505,29.455058069014804]]]",
+      "key" : "perimeterPolygon",
+      "lastUpdateTs" : 1742555344368,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

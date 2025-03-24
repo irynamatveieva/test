@@ -1,0 +1,76 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "9ce07f60-0664-11f0-9932-d5e7e7dd1855"
+    },
+    "image" : null,
+    "name" : "Device Profile",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "t" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "0f809210-062b-11f0-a3b6-2d87f3c32b94"
+          },
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "t + 22222",
+      "output" : {
+        "name" : "t222222",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742812740499,
+      "failuresEnabled" : true
+    },
+    "name" : "Test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SIMPLE"
+  } ]
+}

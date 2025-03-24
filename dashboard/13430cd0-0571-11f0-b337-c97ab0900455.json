@@ -17,7 +17,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "9c1561b0-0568-11f0-965f-bdf8d70d4e1d",
+              "deviceId" : "8b43fb80-063f-11f0-935e-abb9314f9acd",
               "entityAliasId" : null,
               "filterId" : null,
               "dataKeys" : [ {
@@ -40,7 +40,21 @@
                 "label" : "perimeter",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.010524949254256066
+                "_hash" : 0.49928948801508244
+              }, {
+                "name" : "perimeterPolygon",
+                "type" : "attribute",
+                "label" : "perimeterPolygon",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.5934308241532744
+              }, {
+                "name" : "perimeterCircle",
+                "type" : "attribute",
+                "label" : "perimeterCircle",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.896303434402659
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -137,7 +151,7 @@
               "markerImageFunction" : "var type = dsData[dsIndex]['Type'];\nif (type == 'thermometer') {\n\tvar res = {\n\t    url: images[0],\n\t    size: 40\n\t}\n\tvar temperature = dsData[dsIndex]['temperature'];\n\tif (typeof temperature !== undefined) {\n\t    var percent = (temperature + 60)/120;\n\t    var index = Math.min(3, Math.floor(4 * percent));\n\t    res.url = images[index];\n\t}\n\treturn res;\n}",
               "markerImages" : [ "tb-image;/api/images/system/map_marker_image_0.png", "tb-image;/api/images/system/map_marker_image_1.png", "tb-image;/api/images/system/map_marker_image_2.png", "tb-image;/api/images/system/map_marker_image_3.png" ],
               "showPolygon" : true,
-              "polygonKeyName" : "perimeter",
+              "polygonKeyName" : "perimeterPolygon",
               "editablePolygon" : true,
               "showPolygonLabel" : false,
               "usePolygonLabelFunction" : false,
@@ -159,17 +173,27 @@
               "usePolygonStrokeColorFunction" : false,
               "polygonStrokeColorFunction" : null,
               "showCircle" : true,
-              "circleKeyName" : "perimeter",
+              "circleKeyName" : "perimeterCircle",
               "editableCircle" : true,
               "showCircleLabel" : false,
+              "useCircleLabelFunction" : false,
+              "circleLabel" : "${entityName}",
+              "circleLabelFunction" : null,
               "showCircleTooltip" : false,
+              "showCircleTooltipAction" : "click",
+              "autoCloseCircleTooltip" : true,
+              "useCircleTooltipFunction" : false,
+              "circleTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+              "circleTooltipFunction" : null,
               "circleFillColor" : "#3388ff",
               "circleFillColorOpacity" : 0.2,
               "useCircleFillColorFunction" : false,
+              "circleFillColorFunction" : null,
               "circleStrokeColor" : "#3388ff",
               "circleStrokeOpacity" : 1,
               "circleStrokeWeight" : 3,
               "useCircleStrokeColorFunction" : false,
+              "circleStrokeColorFunction" : null,
               "snappable" : false,
               "initDragMode" : false,
               "hideAllControlButton" : false,
