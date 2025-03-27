@@ -1,0 +1,94 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "667d1b60-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "66ed1b40-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "label" : null,
+    "name" : "Heat pump",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Heat pump"
+  },
+  "credentials" : {
+    "credentialsId" : "e9QpdIFroKZ6NiANoIja",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66ed1b40-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273657
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "66a9f7c0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66ed1b40-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 273658
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742899362825,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742899362825,
+      "longValue" : 1742899362803,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastMaintenanceDate",
+      "lastUpdateTs" : 1742898727709,
+      "longValue" : 1742898727709,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

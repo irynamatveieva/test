@@ -1,0 +1,554 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "669adc90-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "label" : null,
+    "name" : "Swimming pool SCADA system",
+    "ownerId" : null,
+    "type" : "Swimming pool SCADA system"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66bb83f0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273649
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66c93f90-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273651
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66d65ef0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273653
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66e09820-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273655
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66ed1b40-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273657
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66f9ec80-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273659
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "67053720-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273661
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "670ed410-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273663
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "67190d40-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273665
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "672912d0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273667
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "67396680-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273669
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "67448a10-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273671
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "674d3ca0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273673
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "6768daf0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273675
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "drainSegmentFlowing",
+      "lastUpdateTs" : 1742898729450,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fillSegmentFlowing",
+      "lastUpdateTs" : 1742898729485,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "filterSegmentFlowing",
+      "lastUpdateTs" : 1742898729511,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "heatSegmentFlowing",
+      "lastUpdateTs" : 1742898729532,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "phFilterSegmentFlowing",
+      "lastUpdateTs" : 1742898729553,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "filterSegmentFlowing" : {
+          "defaultValue" : "false",
+          "refEntityKey" : {
+            "key" : "filterSegmentFlowing",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "sandFilterMode" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "66d65ef0-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "mode",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "var drainSegmentFlowing = filterSegmentFlowing && sandFilterMode == 2;\n\nreturn {\n    \"drainSegmentFlowing\": drainSegmentFlowing\n};",
+      "output" : {
+        "scope" : "SERVER_SCOPE",
+        "type" : "ATTRIBUTES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742899629363,
+      "failuresEnabled" : true
+    },
+    "name" : "Drain Segment Flowing",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "phFilterSegmentFlowing" : {
+          "defaultValue" : "false",
+          "refEntityKey" : {
+            "key" : "phFilterSegmentFlowing",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "poolIntakeValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "67190d40-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "var fillSegmentFlowing = phFilterSegmentFlowing && poolIntakeValveOpened == 1;\n\nreturn {\n    \"fillSegmentFlowing\": fillSegmentFlowing\n};",
+      "output" : {
+        "scope" : "SERVER_SCOPE",
+        "type" : "ATTRIBUTES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742899629364,
+      "failuresEnabled" : true
+    },
+    "name" : "Fill Segment Flowing",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "mainIntakeValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "66bb83f0-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        },
+        "poolDrainValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "67396680-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        },
+        "poolWeirValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "672912d0-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        },
+        "waterLevel" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "67448a10-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "waterLevel",
+            "type" : "TS_LATEST"
+          }
+        },
+        "waterPumpActive" : {
+          "defaultValue" : "false",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "66c93f90-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "active",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "waterPumpOutgoingValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "674d3ca0-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        },
+        "waterPumpRunning" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "66c93f90-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "running",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "var filterSegmentFlowing = waterPumpActive && calculateFilterSegment();\n\nreturn {\n    \"filterSegmentFlowing\": filterSegmentFlowing\n};\n\nfunction calculateFilterSegment() {\n    if (!(waterPumpOutgoingValveOpened == 1 && waterPumpRunning == 1)) {\n        return false;\n    }\n    \n    return (\n        (poolDrainValveOpened == 1 && waterLevel > 0) ||\n        (poolWeirValveOpened == 1 && waterLevel > 89) ||\n        mainIntakeValveOpened == 1\n    );\n}",
+      "output" : {
+        "scope" : "SERVER_SCOPE",
+        "type" : "ATTRIBUTES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742899629364,
+      "failuresEnabled" : true
+    },
+    "name" : "Filter Segment Flowing",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "drainSegmentFlowing" : {
+          "defaultValue" : "false",
+          "refEntityKey" : {
+            "key" : "drainSegmentFlowing",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "filterSegmentFlowing" : {
+          "defaultValue" : "false",
+          "refEntityKey" : {
+            "key" : "filterSegmentFlowing",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "heatPumpIntakeValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "67053720-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "var heatSegmentFlowing = filterSegmentFlowing && !drainSegmentFlowing && heatPumpIntakeValveOpened == 1;\n\nreturn {\n    \"heatSegmentFlowing\": heatSegmentFlowing\n};",
+      "output" : {
+        "scope" : "SERVER_SCOPE",
+        "type" : "ATTRIBUTES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742899629364,
+      "failuresEnabled" : true
+    },
+    "name" : "Heat Segment Flowing",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "drainSegmentFlowing" : {
+          "defaultValue" : "false",
+          "refEntityKey" : {
+            "key" : "drainSegmentFlowing",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "filterSegmentFlowing" : {
+          "defaultValue" : "false",
+          "refEntityKey" : {
+            "key" : "filterSegmentFlowing",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "heatPumpOutgoingValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "670ed410-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        },
+        "heatSegmentFlowing" : {
+          "defaultValue" : "false",
+          "refEntityKey" : {
+            "key" : "heatSegmentFlowing",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "throughpassValveOpened" : {
+          "defaultValue" : "0",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "66e09820-0964-11f0-b6f7-05cf5f5e73da"
+          },
+          "refEntityKey" : {
+            "key" : "opened",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "var phFilterSegmentFlowing = \n    (filterSegmentFlowing && !drainSegmentFlowing && throughpassValveOpened == 1) ||\n    (heatSegmentFlowing && heatPumpOutgoingValveOpened == 1);\n\nreturn {\n    \"phFilterSegmentFlowing\": phFilterSegmentFlowing\n};",
+      "output" : {
+        "scope" : "SERVER_SCOPE",
+        "type" : "ATTRIBUTES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742899629364,
+      "failuresEnabled" : true
+    },
+    "name" : "PH Filter Segment Flowing",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "57baa640-8c7f-11ef-ae92-ed5a145c8601"
+    },
+    "type" : "SCRIPT"
+  } ]
+}

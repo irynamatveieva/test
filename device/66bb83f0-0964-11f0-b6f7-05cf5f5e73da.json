@@ -1,0 +1,86 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "66918dc0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "66bb83f0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "label" : null,
+    "name" : "Main intake valve",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Valve"
+  },
+  "credentials" : {
+    "credentialsId" : "Mw4dPne1UMjdaAfjnbwM",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "669fe5a0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66bb83f0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 273649
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "66a9f7c0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66bb83f0-0964-11f0-b6f7-05cf5f5e73da"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 273650
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742899386419,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742899386419,
+      "longValue" : 1742899386416,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
