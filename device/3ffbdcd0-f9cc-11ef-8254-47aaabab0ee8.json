@@ -1,0 +1,207 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "ec6822d0-f8c8-11ef-aa04-b554e2307108"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "3ffbdcd0-f9cc-11ef-8254-47aaabab0ee8"
+    },
+    "label" : "",
+    "name" : "Device 2",
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "wqjPbUGxVZTu14gfT5ET",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1741184758096,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1741184758096,
+      "longValue" : 1741184758096,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 13.0,
+      "jsonValue" : null,
+      "key" : "m result",
+      "lastUpdateTs" : 1741328812821,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "humidity" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "h",
+            "type" : "TS_LATEST"
+          }
+        },
+        "temperature" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "return {\n    \"mergedData\": temperature.merge(humidity, { ignoreNaN: false })\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741357641111,
+      "failuresEnabled" : true
+    },
+    "name" : "Test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "ec4b9a20-f8c8-11ef-aa04-b554e2307108"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "a" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "a",
+            "type" : "TS_LATEST"
+          }
+        },
+        "t" : {
+          "limit" : 100,
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "return {\n    \"res a\": a.value,\n    \"avg t\": t.avg()\n};",
+      "output" : {
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741245806689,
+      "failuresEnabled" : true
+    },
+    "name" : "Test Script",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "ec4b9a20-f8c8-11ef-aa04-b554e2307108"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "a" : {
+          "defaultValue" : "99",
+          "refEntityKey" : {
+            "key" : "a",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "a - 10",
+      "output" : {
+        "name" : "res a - 10",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741245805136,
+      "failuresEnabled" : true
+    },
+    "name" : "Test Simple",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "ec4b9a20-f8c8-11ef-aa04-b554e2307108"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "m" : {
+          "defaultValue" : "23",
+          "refEntityKey" : {
+            "key" : "m",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        }
+      },
+      "expression" : "m - 10",
+      "output" : {
+        "name" : "m result",
+        "scope" : "SERVER_SCOPE",
+        "type" : "ATTRIBUTES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741245808342,
+      "failuresEnabled" : true
+    },
+    "name" : "Test attr",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "ec4b9a20-f8c8-11ef-aa04-b554e2307108"
+    },
+    "type" : "SIMPLE"
+  } ]
+}
