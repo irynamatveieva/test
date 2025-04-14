@@ -1,0 +1,117 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "20bae3b0-1912-11f0-96bb-3d9e7be5caf9"
+    },
+    "image" : null,
+    "name" : "Device Profile",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "a" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "46fc7020-1912-11f0-afb5-6581137e2031"
+          },
+          "refEntityKey" : {
+            "key" : "a",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "c" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "CUSTOMER",
+            "id" : "516d2ae0-1912-11f0-afb5-6581137e2031"
+          },
+          "refEntityKey" : {
+            "key" : "c",
+            "type" : "TS_LATEST"
+          }
+        },
+        "current" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "current",
+            "type" : "TS_LATEST"
+          }
+        },
+        "d" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "2d9376b0-1912-11f0-96bb-3d9e7be5caf9"
+          },
+          "refEntityKey" : {
+            "key" : "d",
+            "type" : "TS_LATEST"
+          }
+        },
+        "t" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "0d3554b0-1912-11f0-ba3a-c7bc9fd1772b"
+          },
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "current + d + a + c + t",
+      "output" : {
+        "name" : "result",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1744623673238,
+      "failuresEnabled" : true
+    },
+    "name" : "Test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "0d3554b0-1912-11f0-ba3a-c7bc9fd1772b"
+    },
+    "type" : "SIMPLE"
+  } ]
+}
